@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Spcial_!</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 70px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        input {
+            padding: 10px;
+            
+            border: 2px solid darkblue;
+            border-radius: 5px;
+        }
+        p {
+            font-size: 18px;
+            color: rgb(74, 127, 74);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        button:hover {
+            background-color: skyblue;
+        }
+        .emoji {
+            font-size: 100px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        nav {
+            text-align: left;
+            margin-left: 70px;
+        }
+        .blast2 {
+            text-align: right;
+            margin-top: -70px;
+            margin-right: 70px;
+        }
+        .wish {
+            text-align: center;
+            margin-top: 45px;
+            color: darkgreen;
+            font-size: 40px;
+            font-style: italic;
+            border: 1px solid darkgreen;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: auto;
+            padding-right: auto;
+        }
+        .container {
+            transition: transform 0.6s ease;
+            margin-top: 40px;
+        }
+        .slide-up {
+            transform: translateY(-100px);
+        }
+        div {
+            display: inline-flexbox;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 class='blast1' id="blast1">🎉</h1>
+        <h1 class="blast2" id="blast2">🎉</h1>
+    </nav>
+    <div class="container" id="formBox">
+        <h1>Hello friend</h1>
+        <p>Enter Your Birth Date Here...</p>
+        <input type="text" placeholder="DD/MM/YYYY" id="user">
+        <button type="button" onclick="checkdate(); slideForm()" required>Submit</button>
+    </div id='slideForm'>
+        <h1 id="op" class="wish"></h1>
+        <h1 class="emoji" id="emoji"></h1>
+
+    <script>
+        function slideForm() {
+            document.getElementById("formBox").classList.add("slide-up");
+        }
+        function checkdate() {
+            let user = document.getElementById("user").value;
+
+            if (user == '21/06/2005' ) {
+                document.getElementById("op").innerHTML = "Happy Birthday Shivayya! ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } 
+            else if (user === '02/02/2003') {
+                document.getElementById("op").innerHTML = "Happy Birthday Haarikaa! ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } 
+            else if (user === '27/08/2000') {
+                document.getElementById("op").innerHTML = "Happy Birthday Pedha_Akkaa! ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } 
+            else if (user === '19/08/2005') {
+                document.getElementById("op").innerHTML = "Happy Birthday Nareshuuu! ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } else if (user === '24/04/2003') {
+                document.getElementById("op").innerHTML = "Happy Birthday Jyothikaaaaaa! ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } else if (user === '17/10/2005') {
+                document.getElementById("op").innerHTML = "Happy Birthday Sumaaa!   #Fruituuuuuuu ";
+                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("blast1").innerHTML = "🎆";
+                document.getElementById("blast2").innerHTML = "🎆";
+            } 
+            
+            else {
+                document.getElementById("op").innerHTML = "It's not your birthday today.";
+            }
+        }
+    </script>    
+</body>
