@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Spcial_!</title>
+    
+    <title >Birthday Spcial_!</title>
+    <link rel="icon" href="MY ONE.jpg" type="image/x-icon"> 
     <style>
         body {
             background-color: lightgoldenrodyellow;
@@ -40,8 +42,9 @@
         }
         .emoji {
             font-size: 100px;
-            margin-top: 30px;
+            margin-top: -130px;
             text-align: center;
+            
         }
         nav {
             text-align: left;
@@ -51,6 +54,7 @@
             text-align: right;
             margin-top: -70px;
             margin-right: 70px;
+            
         }
         .wish {
             text-align: center;
@@ -79,64 +83,107 @@
             display: inline-flexbox;
             flex-direction: column;
         }
+        #myGif {
+            text-align: left;
+            margin-left: -300px;
+        }
+        #myGif2 {
+            text-align: right;
+            margin-right: -300px;
+            padding-top: -200px;
+        }
+        
     </style>
 </head>
 <body>
     <nav>
-        <h1 class='blast1' id="blast1">🎉</h1>
+        <h1 class='blast1' id="blast1" width="600px" height="600px">🎉</h1>
         <h1 class="blast2" id="blast2">🎉</h1>
     </nav>
     <div class="container" id="formBox">
         <h1>Hello friend</h1>
         <p>Enter Your Birth Date Here...</p>
-        <input type="text" placeholder="DD/MM/YYYY" id="user">
+        <input type="text" placeholder="DD/MM/YYYY" id="user" aria-required="sdfghjkl">
         <button type="button" onclick="checkdate(); slideForm()" required>Submit</button>
     </div id='slideForm'>
-        <h1 id="op" class="wish"></h1>
-        <h1 class="emoji" id="emoji"></h1>
-
+    <h1 id="op" class="wish"></h1>
+    <div class="blast">
+        <img id="myGif" src="" width="100" class="b2">
+        <span class="emoji" id="emoji"></span>
+        <img id="myGif2" src="" width="100" class="b1">
+    </div>
     <script>
+        
         function slideForm() {
             document.getElementById("formBox").classList.add("slide-up");
         }
         function checkdate() {
             let user = document.getElementById("user").value;
-
+            
+            
             if (user == '21/06/2005' ) {
                 document.getElementById("op").innerHTML = "Happy Birthday Shivayya! ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
+                
             } 
             else if (user === '02/02/2003') {
                 document.getElementById("op").innerHTML = "Happy Birthday Haarikaa! ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '27/08/2000') {
                 document.getElementById("op").innerHTML = "Happy Birthday Pedha_Akkaa! ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '19/08/2005') {
                 document.getElementById("op").innerHTML = "Happy Birthday Nareshuuu! ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } else if (user === '24/04/2003') {
                 document.getElementById("op").innerHTML = "Happy Birthday Jyothikaaaaaa! ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } else if (user === '17/10/2005') {
                 document.getElementById("op").innerHTML = "Happy Birthday Sumaaa!   #Fruituuuuuuu ";
-                document.getElementById("emoji").innerHTML = "🎊🎂🎊";
+                document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
-            
+            else if (user === '14/11/2003') {
+                document.getElementById("op").innerHTML = "Happy Birthday Dude!   #ViJaY ";
+                document.getElementById("emoji").innerHTML = "🎂";
+                document.getElementById("blast1").innerHTML = "👻";
+                document.getElementById("blast2").innerHTML = "👻";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
+            }
+            else if (user === '27/07/2004') {
+                document.getElementById("op").innerHTML = "Happy Birthday!   #Lakshmanraoooo";
+                document.getElementById("emoji").innerHTML = "🎂";
+                document.getElementById("blast1").innerHTML = "👻";
+                document.getElementById("blast2").innerHTML = "👻";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
+            }
             else {
                 document.getElementById("op").innerHTML = "It's not your birthday today.";
             }
