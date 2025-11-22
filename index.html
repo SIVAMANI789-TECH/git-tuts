@@ -13,6 +13,7 @@
             text-align: center;
             font-family: Arial, sans-serif;
             margin-top: 70px;
+            
         }
         h1 {
             color: darkblue;
@@ -50,11 +51,16 @@
             text-align: left;
             margin-left: 70px;
         }
+        .b1 {
+            transform: rotate(-35deg);
+        }
+        .b2 {
+            transform: rotate(35deg);
+        }
         .blast2 {
             text-align: right;
             margin-top: -70px;
             margin-right: 70px;
-            
         }
         .wish {
             text-align: center;
@@ -76,7 +82,14 @@
             transition: transform 0.6s ease;
             margin-top: 40px;
         }
+        .wish-slideup {
+            transition: transform 1.5s ease;
+            margin-top: 40px;
+        }
         .slide-up {
+            transform: translateY(-100px);
+        }
+        .slide-up2 {
             transform: translateY(-100px);
         }
         div {
@@ -91,8 +104,10 @@
             text-align: right;
             margin-right: -300px;
             padding-top: -200px;
+            transition: all;
         }
         
+
     </style>
 </head>
 <body>
@@ -104,88 +119,97 @@
         <h1>Hello friend</h1>
         <p>Enter Your Birth Date Here...</p>
         <input type="text" placeholder="DD/MM/YYYY" id="user" aria-required="sdfghjkl">
-        <button type="button" onclick="checkdate(); slideForm()" required>Submit</button>
+        <button type="button" onclick="checkdate(); slideForm(); slideForm2()" required>Submit</button>
     </div id='slideForm'>
-    <h1 id="op" class="wish"></h1>
-    <div class="blast">
-        <img id="myGif" src="" width="100" class="b2">
-        <span class="emoji" id="emoji"></span>
-        <img id="myGif2" src="" width="100" class="b1">
-    </div>
+    <section id="wish-slideup">
+        <div>
+            <h1 id="op" class="wish"></h1>
+        </div>
+        <div class="blast">
+            <img id="myGif" src="" width="100" class="b2">
+            <span class="emoji" id="emoji"></span>
+            <img id="myGif2" src="" width="100" class="b1">
+            
+        </div>
+    </section id="slideForm2">
     <script>
         
         function slideForm() {
             document.getElementById("formBox").classList.add("slide-up");
         }
+        function slideForm2() {
+            document.getElementById("wish-slideup").classList.add("slide-up2");
+        }
         function checkdate() {
             let user = document.getElementById("user").value;
             
             
-            if (user == '21/06/2005' ) {
-                document.getElementById("op").innerHTML = "Happy Birthday Shivayya! ";
+            if (user == '21/06/2005') {
+                document.getElementById("op").innerHTML = "Happy Birthday #Shivayya......! ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
-                
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '02/02/2003') {
-                document.getElementById("op").innerHTML = "Happy Birthday Haarikaa! ";
+                document.getElementById("op").innerHTML = "Happy Birthday #Haarikaa......! ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '27/08/2000') {
-                document.getElementById("op").innerHTML = "Happy Birthday Pedha_Akkaa! ";
+                document.getElementById("op").innerHTML = "Happy Birthday #Pedha_Akkaa.....! ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '19/08/2005') {
-                document.getElementById("op").innerHTML = "Happy Birthday Nareshuuu! ";
+                document.getElementById("op").innerHTML = "Happy Birthday #Nareshuuu.......! ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } else if (user === '24/04/2003') {
-                document.getElementById("op").innerHTML = "Happy Birthday Jyothikaaaaaa! ";
+                document.getElementById("op").innerHTML = "Happy Birthday #Jyothikaaaaaa....! ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } else if (user === '17/10/2005') {
-                document.getElementById("op").innerHTML = "Happy Birthday Sumaaa!   #Fruituuuuuuu ";
+                document.getElementById("op").innerHTML = "Happy Birthday #Sumaaa......!   #Fruituuuuuuu ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "🎆";
                 document.getElementById("blast2").innerHTML = "🎆";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             } 
             else if (user === '14/11/2003') {
                 document.getElementById("op").innerHTML = "Happy Birthday Dude!   #ViJaY ";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "👻";
                 document.getElementById("blast2").innerHTML = "👻";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             }
             else if (user === '27/07/2004') {
                 document.getElementById("op").innerHTML = "Happy Birthday!   #Lakshmanraoooo";
                 document.getElementById("emoji").innerHTML = "🎂";
                 document.getElementById("blast1").innerHTML = "👻";
                 document.getElementById("blast2").innerHTML = "👻";
-                document.getElementById("myGif").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAj/diwali-sparkles-stars.gif";
-                document.getElementById("myGif2").src = "https://media.tenor.com/ZoZqWaSnN5UAAAAi/diwali-sparkles-stars.gif";
+                document.getElementById("myGif").src = "blast1.gif";
+                document.getElementById("myGif2").src = "blast1.gif";
             }
             else {
                 document.getElementById("op").innerHTML = "It's not your birthday today.";
+                document.getElementById("myGif").innerHTML = "😑";
+                document.getElementById("myGif2").innerHTML = "😑";
             }
         }
     </script>    
